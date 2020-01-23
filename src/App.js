@@ -61,7 +61,7 @@ class App extends Component {
               <Route exact path="/women" category="women" render={() => <Category category="women" products={this.state.women} />} />
               <Route exact path="/kids" category="kids" render={() => <Category category="kids" products={this.state.kids} />} />
               <Route exact path="/cart" category="cart" render={() => <Cart category="cart"/>} />
-              <Route exact path="/productDetails/:id" category="cart" render={(props) => <ProductDetails {...props}/>} />
+              <Route exact path="/productDetails/:id" category="product" render={(props) => <ProductDetails {...props} />} />
           </Fragment>
       </div>
     );

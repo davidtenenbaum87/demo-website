@@ -29,3 +29,9 @@
   height: 680px;
   width: 500px;
 }
+
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
