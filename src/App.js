@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navbar from './components/Navbar';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home'
 import Category from './pages/Category'
 import Cart from './pages/Cart'
@@ -8,6 +8,7 @@ import Cart from './pages/Cart'
 
 
 import './App.css';
+import productDetails from './pages/ProductDetails';
 
 class App extends Component {
   constructor(props) {
@@ -51,12 +52,13 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
-              <Route exact path="/" render={() => <Home categories={this.state}/>} />
               <Route exact path="/home" render={() => <Home categories={this.state}/>} />
+              <Route exact path="/"><Redirect to="/home" /></Route>
               <Route exact path="/men" render={() => <Category category="men" products={this.state.men} /> } />
               <Route exact path="/women" category="women" render={() => <Category category="women" products={this.state.women} />} />
               <Route exact path="/kids" category="kids" render={() => <Category category="kids" products={this.state.kids} />} />
               <Route exact path="/cart" category="cart" render={() => <Cart category="cart"/>} />
+              <Route exact path="/productDetails/:id" category="cart" render={() => <productDetails />} />
           </Fragment>
       </div>
     );
