@@ -6,6 +6,10 @@
   padding: 10px 20px;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
 .navbar-categories a {
   margin-right: 10px;
 }
