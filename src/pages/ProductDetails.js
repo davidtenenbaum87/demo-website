@@ -1,10 +1,10 @@
 import React from 'react';
 
-const productDetails = ({ match }) => {
-    console.log(match.url);
+const productDetails = (props) => {
+    console.log(props);
     return (
-        <div className="product">
-            details
+        <div className="productDetails">
+
         </div>
     )
 }
