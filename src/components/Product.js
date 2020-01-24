@@ -1,16 +1,15 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
-
-const Product = ({ category, productDetails }) => {
+const Product = ({ productData, handleAddToCart }) => {
     return (
         <div className="product">
-            <div className="product-image">
-                <NavLink to={{ pathname:`/productDetails/${productDetails.id}`, productDetails: productDetails}} ><img src={productDetails.src} alt={category} /></NavLink>
+            <div className="product-image" id={productData.id} >
+                <img src={productData.src} alt={productData.category} id={productData.id} />
             </div>
             <div className="product-price">
-                <p>{productDetails.price}</p>
+                <p>{productData.price}</p>
             </div>
+            <button className="product-btn-cart" onClick={handleAddToCart} >ADD TO CART</button>
         </div>
     )
 }

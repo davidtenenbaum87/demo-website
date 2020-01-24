@@ -23,6 +23,7 @@
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .product-image img{
@@ -30,8 +31,9 @@
   width: 500px;
 }
 
-.productDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.product-btn-cart {
+  width: 50%;
+  padding: 10px 20px;
+  color: white;
+  background-color: cornflowerblue;
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import Category from './Category';
+import ProductList from '../components/ProductList';
 
-const Home = ({ categories }) => {
+const Home = ({ products, handleAddToCart }) => {
     return (
         <div className="home">
-            <Category category="men" products={categories.men} />
-            <Category category="women" products={categories.women} />
-            <Category category="kids" products={categories.kids} />
+            <ProductList category="men" products={products} handleAddToCart={handleAddToCart}/>
+            <ProductList category="women" products={products} handleAddToCart={handleAddToCart}/>
+            <ProductList category="kids" products={products} handleAddToCart={handleAddToCart}/>
         </div>
     )
 }
