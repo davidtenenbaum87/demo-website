@@ -8,7 +8,7 @@ const Navbar = () => {
         <nav className="navbar">
                 <div className="navbar-links">
                     <div className="navbar-home">
-                        <NavLink to="/home">Home</NavLink>
+                        <NavLink to="/home"><img src="dy-hero-logo-black.png" alt="logo" /></NavLink>
                     </div>
                     <div className="navbar-categories">
                         <NavLink to="/women">Women</NavLink>
@@ -16,7 +16,7 @@ const Navbar = () => {
                         <NavLink to="/kids">Kids</NavLink>
                     </div>
                     <div className="navbar-cart">
-                        <NavLink to="/cart">Cart</NavLink>
+                        <NavLink to="/cart"><i className="fas fa-shopping-cart cart-icon"></i></NavLink>
                     </div>
 
                 </div>
