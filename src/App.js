@@ -40,12 +40,12 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
-              <Route exact path="/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/"><Redirect to="/home" /></Route>
-              <Route exact path="/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/women" category="women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/kids" category="kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/cart" category="cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} />} />
+              <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/"><Redirect to="/demo-website/home" /></Route>
+              <Route exact path="/demo-website/category/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/category/women" category="women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/category/kids" category="kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/cart" category="cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} />} />
           </Fragment>
       </div>
     );
