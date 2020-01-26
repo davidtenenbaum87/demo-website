@@ -70,6 +70,11 @@
   position: absolute;
   top: 5px;
   right: 10px;
+  cursor: pointer;
+} 
+
+.cart-item .product-image {
+  margin: 5px;
 } 
 
 .cart-item .product-price {

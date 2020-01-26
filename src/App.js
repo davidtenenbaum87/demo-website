@@ -35,6 +35,15 @@ class App extends Component {
     }
   }
 
+  handleRemoveFromCart = (e, id) => {
+    let cart = [...this.state.cart];
+    let itemIndex = cart.findIndex(cartItem => cartItem.id === id);
+    let total = this.state.total;
+    total -= cart[itemIndex].price;
+    cart = cart.slice(0, itemIndex).concat(cart.slice(itemIndex + 1));
+    this.setState({ cart, total });    
+  }
+
   render() {
     console.log(this.state);
     return (
@@ -43,11 +52,10 @@ class App extends Component {
           <Fragment>
               <Redirect from="/" to="/demo-website/home" />
               <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              {/* <Route exact path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} /> */}
               <Route exact path="/demo-website/category/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/category/women" category="women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/category/kids" category="kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/cart" category="cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} />} />
+              <Route exact path="/demo-website/category/women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/category/kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
           </Fragment>
       </div>
     );
