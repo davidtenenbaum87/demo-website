@@ -36,12 +36,14 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state);
     return (
       <div className="App">
           <Navbar />
           <Fragment>
+              <Redirect from="/" to="/demo-website/home" />
               <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/"><Redirect to="/demo-website/home" /></Route>
+              {/* <Route exact path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} /> */}
               <Route exact path="/demo-website/category/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
               <Route exact path="/demo-website/category/women" category="women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
               <Route exact path="/demo-website/category/kids" category="kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
