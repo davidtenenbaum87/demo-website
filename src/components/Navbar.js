@@ -4,11 +4,17 @@ import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const triggerEvent = () => { 
+        if (window.DY) {
+            window.DY.API('event', {name: 'Home Icon Click'})
+        }
+    };
+
     return (
         <nav className="navbar">
                 <div className="navbar-links">
                     <div className="navbar-home">
-                        <NavLink to="/demo-website/home"><img src="dy-hero-logo-black.png" alt="logo" /></NavLink>
+                        <NavLink to="/demo-website/home"><img src="dy-hero-logo-black.png" alt="logo" onClick={triggerEvent}/></NavLink>
                     </div>
                     <div className="navbar-categories">
                         <NavLink to="/demo-website/category/women">Women</NavLink>
