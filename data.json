@@ -1,0 +1,22 @@
+[
+    {
+        "sku": "1",
+        "group_id": "1",
+        "price": 29.99,
+        "name": "t_shirt",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/953/890/cn17953890.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men",
+        "categories": "mens|sport"
+    },
+    {
+        "sku": "2",
+        "group_id": "1",
+        "price": 14.99,
+        "name": "t_shirt",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/971/260/cn17971260.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men",
+        "categories": "mens|sport"
+    }
+]

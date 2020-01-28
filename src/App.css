@@ -44,7 +44,7 @@
 }
 
 .product-btn-add-cart {
-  width: 50%;
+  /* width: 50%; */
   padding: 10px 20px;
   color: white;
   background-color: cornflowerblue;
@@ -101,4 +101,10 @@ a .cart-icon {
 .product-btn-remove-cart {
   color: grey;
   font-size: 35px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

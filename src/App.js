@@ -4,6 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductList from './components/ProductList';
 import Cart from './pages/Cart';
+import ProductDetails from './pages/ProductDetails';
 import {data} from './pages/fakeData';
 import './App.css';
 
@@ -45,17 +46,19 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
           <Navbar />
           <Fragment>
               <Redirect from="/" to="/demo-website/home" />
-              <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/demo-website/category/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/category/women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/category/kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/demo-website/category/men" render={() => <ProductList category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/demo-website/category/women" render={() => <ProductList category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/demo-website/category/kids" render={() => <ProductList category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
               <Route exact path="/demo-website/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
+
+              <Route exact path="/demo-website/category/:category/product/:id" component={ProductDetails} />
+
           </Fragment>
       </div>
     );
