@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import Product from '../components/Product';
+import ProductCard from '../components/ProductCard';
 
-// const Cart = ({ cartItems, total, handleRemoveFromCart}) => {
 class Cart extends Component {
     constructor(props) {
         super(props);
@@ -10,8 +9,14 @@ class Cart extends Component {
         };
     }
 
+    componentDidMount() {
+        if (window.DY !== null)
+            window.DY.recommendationContext = { type: "CART" };
+    }
+
+
     renderCartItems = () => this.props.cartItems.map(item => {
-        return <Product key={item.id} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>
+        return <ProductCard key={item.id} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>
     });
 
     render() {

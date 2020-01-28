@@ -2,21 +2,69 @@
     {
         "sku": "1",
         "group_id": "1",
-        "price": 29.99,
-        "name": "t_shirt",
+        "price": 59.95,
+        "name": "Plaid Twill Shirt",
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/953/890/cn17953890.jpg",
-        "url": "https://davidtenenbaum87.github.io/demo-website/category/men",
-        "categories": "mens|sport"
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/1",
+        "categories": "mens|Longsleeves|Spreadcollar|Cotton|weave|Plaid|Twill|Shirt",
+        "color_1": "red",
+        "color_2": "blue"
     },
     {
         "sku": "2",
         "group_id": "1",
-        "price": 14.99,
-        "name": "t_shirt",
+        "price": 79.95,
+        "name": "Lightweight Shirt Jacket",
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/971/260/cn17971260.jpg",
-        "url": "https://davidtenenbaum87.github.io/demo-website/category/men",
-        "categories": "mens|sport"
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/2",
+        "categories": "mens|weave|Lightweight|Shirt|Jacket|Longsleeves|Cotton",
+        "color_1": "brown"
+    },
+    {
+        "sku": "3",
+        "group_id": "1",
+        "price": 69.95,
+        "name": "Pleated Oxford Shirtdress",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/296/646/cn17296646.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/3",
+        "categories": "womens|Pleated|Oxford|Shirtdress|Smooth|weave|Longsleeves|Cotton",
+        "color_1": "white"
+    },
+    {
+        "sku": "4",
+        "group_id": "1",
+        "price": 57.99,
+        "name": "Shirred Popover Denim Shirtdress",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/236/354/cn17236354.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/4",
+        "categories": "womens|Shirred|Popover|Denim|Shirtdress|denim|Cotton",
+        "color_1": "black"
+    },
+    {
+        "sku": "5",
+        "group_id": "1",
+        "price": 39.95,
+        "name": "Kids Graphic Sweatshirt",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/648/627/cn17648627.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/5",
+        "categories": "kids|Graphic|Sweatshirt|Crewneck|Cotton",
+        "color_1": "grey",
+        "color_2": "white"
+    },
+    {
+        "sku": "6",
+        "group_id": "1",
+        "price": 24.95,
+        "name": "Toddler Polar Bear Trapper Hat",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/429/400/cn17429400.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/6",
+        "categories": "kids|Toddler|Hat|Polyester",
+        "color_1": "white"
     }
 ]
