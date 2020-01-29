@@ -57,9 +57,7 @@ class App extends Component {
               <Route exact path="/demo-website/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
               <Route exact path="/demo-website/category/kids" render={() => <Category category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
               <Route exact path="/demo-website/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
-
               <Route exact path="/demo-website/category/:category/product/:id" component={Product} />
-
           </Fragment>
       </div>
     );
