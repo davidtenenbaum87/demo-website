@@ -72,5 +72,80 @@
         "categories": "kids|Toddler|Hat|Polyester",
         "category": "kids",
         "color_1": "white"
+    },
+    {
+        "sku": "7",
+        "group_id": "1",
+        "price": 49.95,
+        "name": "Slim Twill Joggers with GapFlex",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/275/259/cn17275259.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/7",
+        "categories": "mens|Joggers|Slim|Twill",
+        "category": "men",
+        "color_1": "green",
+        "color_2": "camo"
+    },
+    {
+        "sku": "8",
+        "group_id": "1",
+        "price": 54.95,
+        "name": "Vintage Soft Carbonized Full-Zip Hoodie",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0017/403/674/cn17403674.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/8",
+        "categories": "mens|Hoodie",
+        "category": "men",
+        "color_1": "navy"
+    },
+    {
+        "sku": "9",
+        "group_id": "1",
+        "price": 79.95,
+        "name": "Sky High Rise True Skinny Ankle Jeans",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0018/216/653/cn18216653.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/9",
+        "categories": "womens|Skinny|Jeans",
+        "category": "women",
+        "color_1": "indigo"
+    },
+    {
+        "sku": "10",
+        "group_id": "1",
+        "price": 79.95,
+        "name": "Distressed Mid Rise Denim Shorts",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0018/142/973/cn18142973.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/10",
+        "categories": "womens|Denim|Shorts|Jeans",
+        "category": "women",
+        "color_1": "bleached"
+    },
+    {
+        "sku": "11",
+        "group_id": "1",
+        "price": 24.95,
+        "name": "Kids Pull-On Easy Shorts",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0018/245/202/cn18245202.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/11",
+        "categories": "kids|Shorts|Pull-On",
+        "category": "kids",
+        "color_1": "green",
+        "color_2": "camo"
+    },
+    {
+        "sku": "12",
+        "group_id": "1",
+        "price": 39.95,
+        "name": "Kids Super Skinny Jeans with Stretch",
+        "in_stock": true,
+        "image_url": "https://www.gap.com/webcontent/0016/261/164/cn16261164.jpg",
+        "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/12",
+        "categories": "kids|Skinny|Stretch|Jeans",
+        "category": "kids",
+        "color_1": "indigo"
     }
+    
 ]

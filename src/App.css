@@ -28,7 +28,9 @@
 .category {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 15px;
+  width: 100%;
 }
 
 .product-item {
