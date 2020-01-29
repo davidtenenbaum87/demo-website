@@ -20,6 +20,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({products: Object.values(data)[0]});
+    window.cartValue = this.state.total || 0;
   }
 
   handleAddToCart = (e, id) => {
@@ -30,7 +31,7 @@ class App extends Component {
           cart.push(product);
           let total = this.state.total;
           total = total === null ? product.price : total += product.price;
-          this.setState({ cart, total });
+          this.setState({ cart, total }, () => window.cartValue = this.state.total);
         }
       })
     }
@@ -42,7 +43,7 @@ class App extends Component {
     let total = this.state.total;
     total -= cart[itemIndex].price;
     cart = cart.slice(0, itemIndex).concat(cart.slice(itemIndex + 1));
-    this.setState({ cart, total });    
+    this.setState({ cart, total }, () => window.cartValue = this.state.total);
   }
 
   render() {

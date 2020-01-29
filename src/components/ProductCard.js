@@ -14,7 +14,6 @@ const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className
                 <p>${productData.price}</p>
             </div>
             {className === "product-item" ? 
-                // <button className="product-btn-add-cart" onClick={(e) => handleAddToCart(e, productData.id)} >ADD TO CART</button>
                 null
             :
                 <i className="fas fa-times product-btn-remove-cart" onClick={(e) => handleRemoveFromCart(e, productData.id)}></i>
