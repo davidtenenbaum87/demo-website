@@ -11,7 +11,7 @@ class Cart extends Component {
 
     componentDidMount() {
         if (window.DY !== null)
-            window.DY.recommendationContext = { type: "CART", data: [this.props.cartItems.map(item => item.sku)] };
+            window.DY.recommendationContext = { type: "CART", data: [this.props.cartItems.map(item => item.sku)][0] };
     }
 
 
