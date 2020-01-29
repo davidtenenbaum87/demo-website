@@ -34,7 +34,7 @@
 .product-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   margin-bottom: 50px;
 }
 
@@ -103,7 +103,7 @@ a .cart-icon {
   font-size: 35px;
 }
 
-.product-details {
+.product {
   display: flex;
   flex-direction: column;
   align-items: center;

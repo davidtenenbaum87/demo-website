@@ -10,8 +10,13 @@ const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className
                     <img src={productData.image_url} alt={productData.name} id={productData.sku} />
                 </div>
             </Link>
-            <div className="product-price">
-                <p>${productData.price}</p>
+            <div className="product-data">
+                <div className="product-name">
+                    <p>{productData.name}</p>
+                </div>
+                <div className="product-price">
+                    <p>${productData.price}</p>
+                </div>
             </div>
             {className === "product-item" ? 
                 null
