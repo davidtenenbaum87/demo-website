@@ -9,7 +9,7 @@ class Category extends Component {
     }
 
     renderProducts = () => this.props.products.filter(p => p.category === this.props.category).map((product) => {
-        return <ProductCard key={product.id} productData={product} handleAddToCart={this.props.handleAddToCart} className="product-item"/>;
+        return <ProductCard key={product.sku} productData={product} handleAddToCart={this.props.handleAddToCart} className="product-item"/>;
     })
 
     render() {

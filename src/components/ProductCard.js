@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className }) => {
     return (
         <div className={className}>
-            <Link to={{pathname:`/demo-website/category/${productData.category}/product/${productData.id}`, productData, handleAddToCart, handleRemoveFromCart, className}}>
+            <Link to={{pathname:`/demo-website/category/${productData.category}/product/${productData.sku}`, productData, handleAddToCart, handleRemoveFromCart, className}}>
                 <div className="product-image" id={productData.id}>
-                    <img src={productData.src} alt={productData.category} id={productData.id} />
+                    <img src={productData.image_url} alt={productData.name} id={productData.sku} />
                 </div>
             </Link>
             <div className="product-price">
@@ -16,7 +16,7 @@ const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className
             {className === "product-item" ? 
                 null
             :
-                <i className="fas fa-times product-btn-remove-cart" onClick={(e) => handleRemoveFromCart(e, productData.id)}></i>
+                <i className="fas fa-times product-btn-remove-cart" onClick={(e) => handleRemoveFromCart(e, productData.sku)}></i>
             }
         </div>
     )

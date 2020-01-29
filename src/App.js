@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
 import Product from './pages/Product';
-import {data} from './pages/fakeData';
+import data from './data.json';
 import './App.css';
 
 class App extends Component {
@@ -14,19 +14,19 @@ class App extends Component {
     this.state = {
       products: [],
       cart: [],
-      total: null
+      total: null,
     }
   }
 
   componentDidMount() {
-    this.setState({products: Object.values(data)[0]});
+    this.setState({products: data});
     window.cartValue = this.state.total || 0;
   }
 
-  handleAddToCart = (e, id) => {
+  handleAddToCart = (e, sku) => {
     if (this.state.products.length !== 0) {
       this.state.products.forEach((product) => {
-        if (product.id === id) {
+        if (product.sku === sku) {
           let cart = [...this.state.cart];
           cart.push(product);
           let total = this.state.total;
@@ -37,9 +37,9 @@ class App extends Component {
     }
   }
 
-  handleRemoveFromCart = (e, id) => {
+  handleRemoveFromCart = (e, sku) => {
     let cart = [...this.state.cart];
-    let itemIndex = cart.findIndex(cartItem => cartItem.id === id);
+    let itemIndex = cart.findIndex(cartItem => cartItem.sku === sku);
     let total = this.state.total;
     total -= cart[itemIndex].price;
     cart = cart.slice(0, itemIndex).concat(cart.slice(itemIndex + 1));

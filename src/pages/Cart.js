@@ -16,7 +16,7 @@ class Cart extends Component {
 
 
     renderCartItems = () => this.props.cartItems.map(item => {
-        return <ProductCard key={item.id} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>
+        return <ProductCard key={item.sku} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>
     });
 
     render() {
