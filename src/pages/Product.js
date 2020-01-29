@@ -8,7 +8,7 @@ class Product extends Component {
 
     componentDidMount() {
         if (window.DY !== null)
-            window.DY.recommendationContext = { type: "PRODUCT" };
+            window.DY.recommendationContext = { type: "PRODUCT" , data: [this.productData.sku] };
     }
 
     
