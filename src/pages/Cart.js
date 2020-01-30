@@ -14,7 +14,7 @@ class Cart extends Component {
             window.DY.API('spa', {
                 context: {
                 type: 'CART',
-                data: [this.props.cartItems.map(item => item.sku)][0],
+                data: [this.props.cartItems.map(item => item.sku)][0] || [],
                 },
                 countAsPageview: true
             });
