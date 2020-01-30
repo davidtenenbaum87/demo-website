@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navbar from './components/Navbar';
-import { Route } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
@@ -51,6 +51,7 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
+              {/* <Redirect from="/" to="/demo-website/home" /> */}
               <Route exact path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
               <Route exact path="/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
               <Route exact path="/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
