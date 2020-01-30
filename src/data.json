@@ -14,7 +14,7 @@
     },
     {
         "sku": "2",
-        "group_id": "1",
+        "group_id": "2",
         "price": 79.95,
         "name": "Lightweight Shirt Jacket",
         "in_stock": true,
@@ -26,7 +26,7 @@
     },
     {
         "sku": "3",
-        "group_id": "1",
+        "group_id": "3",
         "price": 69.95,
         "name": "Pleated Oxford Shirtdress",
         "in_stock": true,
@@ -38,7 +38,7 @@
     },
     {
         "sku": "4",
-        "group_id": "1",
+        "group_id": "4",
         "price": 57.99,
         "name": "Shirred Popover Denim Shirtdress",
         "in_stock": true,
@@ -50,7 +50,7 @@
     },
     {
         "sku": "5",
-        "group_id": "1",
+        "group_id": "5",
         "price": 39.95,
         "name": "Kids Graphic Sweatshirt",
         "in_stock": true,
@@ -63,7 +63,7 @@
     },
     {
         "sku": "6",
-        "group_id": "1",
+        "group_id": "6",
         "price": 24.95,
         "name": "Toddler Polar Bear Trapper Hat",
         "in_stock": true,
@@ -75,7 +75,7 @@
     },
     {
         "sku": "7",
-        "group_id": "1",
+        "group_id": "7",
         "price": 49.95,
         "name": "Slim Twill Joggers with GapFlex",
         "in_stock": true,
@@ -88,7 +88,7 @@
     },
     {
         "sku": "8",
-        "group_id": "1",
+        "group_id": "8",
         "price": 54.95,
         "name": "Vintage Soft Carbonized Full-Zip Hoodie",
         "in_stock": true,
@@ -100,7 +100,7 @@
     },
     {
         "sku": "9",
-        "group_id": "1",
+        "group_id": "9",
         "price": 79.95,
         "name": "Sky High Rise True Skinny Ankle Jeans",
         "in_stock": true,
@@ -112,7 +112,7 @@
     },
     {
         "sku": "10",
-        "group_id": "1",
+        "group_id": "10",
         "price": 79.95,
         "name": "Distressed Mid Rise Denim Shorts",
         "in_stock": true,
@@ -124,7 +124,7 @@
     },
     {
         "sku": "11",
-        "group_id": "1",
+        "group_id": "11",
         "price": 24.95,
         "name": "Kids Pull-On Easy Shorts",
         "in_stock": true,
@@ -137,7 +137,7 @@
     },
     {
         "sku": "12",
-        "group_id": "1",
+        "group_id": "12",
         "price": 39.95,
         "name": "Kids Super Skinny Jeans with Stretch",
         "in_stock": true,
