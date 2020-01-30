@@ -10,8 +10,15 @@ class Cart extends Component {
     }
 
     componentDidMount() {
-        if (window.DY !== null)
-            window.DY.recommendationContext = { type: "CART", data: [this.props.cartItems.map(item => item.sku)][0] };
+        if (window.DY !== null) {
+            window.DY.API('spa', {
+                context: {
+                type: 'CART',
+                data: [this.props.cartItems.map(item => item.sku)][0],
+                },
+                countAsPageview: true
+            });
+        }
     }
 
 

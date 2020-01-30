@@ -7,8 +7,15 @@ class Product extends Component {
     }
 
     componentDidMount() {
-        if (window.DY !== null)
-            window.DY.recommendationContext = { type: "PRODUCT" , data: [this.productData.sku] };
+        if (window.DY !== null) {
+            window.DY.API('spa', {
+                context: {
+                type: 'PRODUCT',
+                data: [this.productData.sku],
+                },
+                countAsPageview: true
+            });
+        }
     }
 
     

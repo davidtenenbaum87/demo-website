@@ -4,8 +4,14 @@ import ProductCard from '../components/ProductCard';
 // const Category = ({ category, products, handleAddToCart }) => {
 class Category extends Component {
     componentDidMount() {
-        if (window.DY !== null)
-            window.DY.recommendationContext = { type: "CATEGORY" };
+        if (window.DY !== null) {
+            window.DY.API('spa', {
+                context: {
+                type: 'CATEGORY'
+                },
+                countAsPageview: true
+            });
+        }
     }
 
     renderProducts = () => this.props.products.filter(p => p.category === this.props.category).map((product) => {
