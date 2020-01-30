@@ -7,8 +7,8 @@ class Category extends Component {
         if (window.DY !== null) {
             window.DY.API('spa', {
                 context: {
-                type: 'CATEGORY',
-                data: [this.props.category],
+                    type: 'CATEGORY',
+                    data: [this.props.category],
                 },
                 countAsPageview: true
             });
