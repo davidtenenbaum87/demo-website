@@ -51,13 +51,14 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
-              <Redirect from="/" to="/demo-website/home" />
-              <Route exact path="/demo-website/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route exact path="/demo-website/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/demo-website/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/demo-website/category/kids" render={() => <Category category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route exact path="/demo-website/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
-              <Route exact path="/demo-website/category/:category/product/:id" component={Product} />
+              {/* <Redirect from="/" to="/demo-website/home" /> */}
+              <Route  path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route  path="/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route  path="/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route  path="/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route  path="/category/kids" render={() => <Category category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route  path="/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
+              <Route  path="/category/:category/product/:id" component={Product} />
           </Fragment>
       </div>
     );
