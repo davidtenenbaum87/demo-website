@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navbar from './components/Navbar';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
@@ -51,14 +51,12 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
-              {/* <Redirect from="/" to="/demo-website/home" /> */}
-              <Route  path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route  path="/home" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
-              <Route  path="/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route  path="/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route  path="/category/kids" render={() => <Category category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
-              <Route  path="/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
-              <Route  path="/category/:category/product/:id" component={Product} />
+              <Route exact path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
+              <Route exact path="/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/category/kids" render={() => <Category category="kids" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
+              <Route exact path="/cart" render={() => <Cart category="cart" cartItems={this.state.cart} total={this.state.total} handleRemoveFromCart={this.handleRemoveFromCart} />} />
+              <Route exact path="/category/:category/product/:id" component={Product} />
           </Fragment>
       </div>
     );

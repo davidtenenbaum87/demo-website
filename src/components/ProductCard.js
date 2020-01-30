@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className }) => {
     return (
         <div className={className}>
-            <Link to={{pathname:`/demo-website/category/${productData.category}/product/${productData.sku}`, productData, handleAddToCart, handleRemoveFromCart, className}}>
+            <Link to={{pathname:`/category/${productData.category}/product/${productData.sku}`, productData, handleAddToCart, handleRemoveFromCart, className}}>
                 <div className="product-image" id={productData.id}>
                     <img src={productData.image_url} alt={productData.name} id={productData.sku} />
                 </div>

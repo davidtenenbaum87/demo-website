@@ -14,15 +14,15 @@ const Navbar = () => {
         <nav className="navbar">
                 <div className="navbar-links">
                     <div className="navbar-home">
-                        <NavLink to="/demo-website/home"><img src="dy-hero-logo-black.png" alt="logo" onClick={triggerEvent}/></NavLink>
+                        <NavLink to="/"><img src="dy-hero-logo-black.png" alt="logo" onClick={triggerEvent}/></NavLink>
                     </div>
                     <div className="navbar-categories">
-                        <NavLink to="/demo-website/category/women">Women</NavLink>
-                        <NavLink to="/demo-website/category/men">Men</NavLink>
-                        <NavLink to="/demo-website/category/kids">Kids</NavLink>
+                        <NavLink to="/category/women">Women</NavLink>
+                        <NavLink to="/category/men">Men</NavLink>
+                        <NavLink to="/category/kids">Kids</NavLink>
                     </div>
                     <div className="navbar-cart">
-                        <NavLink to="/demo-website/cart"><i className="fas fa-shopping-cart cart-icon"></i></NavLink>
+                        <NavLink to="/cart"><i className="fas fa-shopping-cart cart-icon"></i></NavLink>
                     </div>
 
                 </div>
