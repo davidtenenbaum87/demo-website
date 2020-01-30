@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Navbar from './components/Navbar';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
@@ -34,6 +34,22 @@ class App extends Component {
           this.setState({ cart, total }, () => window.cartValue = this.state.total);
         }
       })
+    }
+
+
+    console.log(this.state.products)
+    if (window.DY) {
+      window.DY.API("event", {
+        name: "Add to Cart",
+        properties: {
+          dyType: "add-to-cart-v1",
+          value: this.state.products.find(item => item.sku === sku).price,
+          currency: "any supported currency code",
+          productId: this.state.products.find(item => item.sku === sku).sku,
+          quantity: 1,
+          cart: [...this.state.cart]
+        }
+      });
     }
   }
 
