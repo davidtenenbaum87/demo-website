@@ -8,8 +8,7 @@ class Product extends Component {
 
     componentDidMount() {
         if (window.DY !== null) {
-            window.DY.API('spa_end');
-            window.DY.API('spa', {
+            window.DY.API('spa_start', {
                 context: {
                 type: 'PRODUCT',
                 data: [this.productData.sku],
@@ -19,7 +18,12 @@ class Product extends Component {
         }
     }
 
-    
+    componentWillUnmount() {
+        if (window.DY !== null) {
+            window.DY.API('spa_end');
+        }
+    }
+  
     render() {
         return (
             <div className="product">

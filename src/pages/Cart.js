@@ -11,8 +11,7 @@ class Cart extends Component {
 
     componentDidMount() {
         if (window.DY !== null) {
-            window.DY.API('spa_end');
-            window.DY.API('spa', {
+            window.DY.API('spa_start', {
                 context: {
                 type: 'CART',
                 data: [this.props.cartItems.map(item => item.sku)][0] || [""],
@@ -22,6 +21,11 @@ class Cart extends Component {
         }
     }
 
+    componentWillUnmount() {
+        if (window.DY !== null) {
+            window.DY.API('spa_end');
+        }
+    }
 
     renderCartItems = () => this.props.cartItems.map(item => {
         return <ProductCard key={item.sku} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>

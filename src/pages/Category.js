@@ -5,14 +5,19 @@ import ProductCard from '../components/ProductCard';
 class Category extends Component {
     componentDidMount() {
         if (window.DY !== null) {
-            window.DY.API('spa_end');
-            window.DY.API('spa', {
+            window.DY.API('spa_start', {
                 context: {
                     type: 'CATEGORY',
                     data: [this.props.category],
                 },
                 countAsPageview: true
             });
+        }
+    }
+
+    componentWillUnmount() {
+        if (window.DY !== null) {
+            window.DY.API('spa_end');
         }
     }
 

@@ -4,15 +4,19 @@ import Category from './Category';
 class Home extends Component {
     componentDidMount() {
         if (window.DY !== null) {
-            window.DY.API('spa_end');
-            window.DY.API('spa', {
+            window.DY.API('spa_start', {
                 context: {
                 type: 'HOMEPAGE'
                 },
                 countAsPageview: true
             });
         }
-            // window.DY.recommendationContext = { type: "HOMEPAGE" };
+    }
+
+    componentWillUnmount() {
+        if (window.DY !== null) {
+            window.DY.API('spa_end');
+        }
     }
 
     render() {
