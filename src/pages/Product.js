@@ -8,6 +8,7 @@ class Product extends Component {
 
     componentDidMount() {
         if (window.DY !== null) {
+            window.DY.API('spa_end');
             window.DY.API('spa', {
                 context: {
                 type: 'PRODUCT',
