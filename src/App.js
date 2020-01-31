@@ -23,21 +23,26 @@ class App extends Component {
     window.cartValue = this.state.total || 0;
   }
 
+  calculateCartTotal = () => {
+    let total;
+    if (this.state.cart.length !== 0) {
+      total = [...this.state.cart].map(cartItem => cartItem.price).reduce((acc, x) => acc + x);
+      this.setState({ total }, () => window.cartValue = this.state.total);
+    } else {
+      total = null;
+      this.setState({ total }, () => window.cartValue = this.state.total);
+    }
+  }
+
   handleAddToCart = (e, sku) => {
     if (this.state.products.length !== 0) {
       this.state.products.forEach((product) => {
         if (product.sku === sku) {
-          let cart = [...this.state.cart];
-          cart.push(product);
-          let total = this.state.total;
-          total = total === null ? product.price : total += product.price;
-          this.setState({ cart, total }, () => window.cartValue = this.state.total);
+          this.setState({ cart: [...this.state.cart, product] }, () => { this.calculateCartTotal(); this.props.history.goBack() });
         }
       })
     }
 
-
-    console.log(this.state.products)
     if (window.DY) {
       window.DY.API("event", {
         name: "Add to Cart",
@@ -54,12 +59,8 @@ class App extends Component {
   }
 
   handleRemoveFromCart = (e, sku) => {
-    let cart = [...this.state.cart];
-    let itemIndex = cart.findIndex(cartItem => cartItem.sku === sku);
-    let total = this.state.total;
-    total -= cart[itemIndex].price;
-    cart = cart.slice(0, itemIndex).concat(cart.slice(itemIndex + 1));
-    this.setState({ cart, total }, () => window.cartValue = this.state.total);
+    let cart = [...this.state.cart].filter(cartItem => cartItem.sku !== sku);
+    this.setState({ cart }, () => this.calculateCartTotal());
   }
 
   render() {
