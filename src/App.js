@@ -50,7 +50,7 @@ class App extends Component {
           dyType: "add-to-cart-v1",
           value: this.state.products.find(item => item.sku === sku).price,
           currency: "any supported currency code",
-          productId: this.state.products.find(item => item.sku === sku).sku,
+          productId: this.state.products.find(item => item.sku === sku).sku.toString(),
           quantity: 1,
           cart: [...this.state.cart]
         }
