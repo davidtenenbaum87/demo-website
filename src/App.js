@@ -49,8 +49,8 @@ class App extends Component {
         properties: {
           dyType: "add-to-cart-v1",
           value: this.state.products.find(item => item.sku === sku).price,
-          currency: "any supported currency code",
-          productId: this.state.products.find(item => item.sku === sku).sku.toString(),
+          currency: "USD",
+          productId: (this.state.products.find(item => item.sku === sku).sku).toString(),
           quantity: 1,
           cart: [...this.state.cart]
         }
@@ -68,7 +68,6 @@ class App extends Component {
       <div className="App">
           <Navbar />
           <Fragment>
-              {/* <Redirect from="/" to="/demo-website/home" /> */}
               <Route exact path="/" render={() => <Home products={this.state.products} handleAddToCart={this.handleAddToCart} />} />
               <Route exact path="/category/men" render={() => <Category category="men" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
               <Route exact path="/category/women" render={() => <Category category="women" products={this.state.products} handleAddToCart={this.handleAddToCart}/>} />
