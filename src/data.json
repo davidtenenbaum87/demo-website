@@ -7,7 +7,7 @@
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/953/890/cn17953890.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/1",
-        "categories": "mens|Longsleeves|Spreadcollar|Cotton|weave|Plaid|Twill|Shirt",
+        "categories": "mens|Longsleeves|Cotton|Shirt",
         "category": "men",
         "color_1": "red",
         "color_2": "blue"
@@ -20,7 +20,7 @@
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/971/260/cn17971260.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/2",
-        "categories": "mens|weave|Lightweight|Shirt|Jacket|Longsleeves|Cotton",
+        "categories": "mens|Shirt|Jacket|Longsleeves|Cotton",
         "category": "men",
         "color_1": "brown"
     },
@@ -32,7 +32,7 @@
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/296/646/cn17296646.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/3",
-        "categories": "womens|Pleated|Oxford|Shirtdress|Smooth|weave|Longsleeves|Cotton",
+        "categories": "womens|Shirtdress|Longsleeves|Cotton",
         "category": "women",
         "color_1": "white"
     },
@@ -44,7 +44,7 @@
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/236/354/cn17236354.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/4",
-        "categories": "womens|Shirred|Popover|Denim|Shirtdress|denim|Cotton",
+        "categories": "womens|Denim|Shirtdress|denim|Cotton",
         "category": "women",
         "color_1": "black"
     },
@@ -56,7 +56,7 @@
         "in_stock": true,
         "image_url": "https://www.gap.com/webcontent/0017/648/627/cn17648627.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/5",
-        "categories": "kids|Graphic|Sweatshirt|Crewneck|Cotton",
+        "categories": "kids|Sweatshirt|Cotton",
         "category": "kids",
         "color_1": "grey",
         "color_2": "white"
