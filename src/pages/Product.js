@@ -15,7 +15,12 @@ class Product extends Component {
                 },
                 countAsPageview: true
             });
+
         }
+        window.DYO.smartObject("Training - Recommendation Widget (Product Page - Similarity)", {
+            target: "dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)",
+            inline: true
+        });
     }
 
     componentWillUnmount() {
@@ -47,7 +52,8 @@ class Product extends Component {
                         null
                     }
                 </div>
-                <div className="dy-div"></div>
+                {/* <div className="dy-div"></div> */}
+                <div id="dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)"></div>
             </Fragment>
         )
     }
