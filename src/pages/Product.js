@@ -17,10 +17,12 @@ class Product extends Component {
             });
 
         }
-        window.DYO.smartObject("Training - Recommendation Widget (Product Page - Similarity)", {
-            target: "dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)",
-            inline: true
-        });
+        if (window.DYO !== null) {
+            window.DYO.smartObject("Training - Recommendation Widget (Product Page - Similarity)", {
+                target: "dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)",
+                inline: true
+            });
+        }
     }
 
     componentWillUnmount() {
