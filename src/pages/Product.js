@@ -45,6 +45,7 @@ class Product extends Component {
                 :
                     null
                 }
+                <div className="dy-div"></div>
             </div>
         )
     }
