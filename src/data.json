@@ -8,6 +8,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/953/890/cn17953890.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/1",
         "categories": "mens|Longsleeves|Cotton|Shirt",
+        "keywords": "mens|Longsleeves|Cotton|Shirt",
         "category": "men",
         "color_1": "red",
         "color_2": "blue"
@@ -21,6 +22,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/971/260/cn17971260.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/2",
         "categories": "mens|Shirt|Jacket|Longsleeves|Cotton",
+        "keywords": "mens|Shirt|Jacket|Longsleeves|Cotton",
         "category": "men",
         "color_1": "brown"
     },
@@ -33,6 +35,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/296/646/cn17296646.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/3",
         "categories": "womens|Shirtdress|Longsleeves|Cotton",
+        "keywords": "womens|Shirtdress|Longsleeves|Cotton",
         "category": "women",
         "color_1": "white"
     },
@@ -45,6 +48,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/236/354/cn17236354.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/4",
         "categories": "womens|Denim|Shirtdress|denim|Cotton",
+        "keywords": "womens|Denim|Shirtdress|denim|Cotton",
         "category": "women",
         "color_1": "black"
     },
@@ -57,6 +61,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/648/627/cn17648627.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/5",
         "categories": "kids|Sweatshirt|Cotton",
+        "keywords": "kids|Sweatshirt|Cotton",
         "category": "kids",
         "color_1": "grey",
         "color_2": "white"
@@ -70,6 +75,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/429/400/cn17429400.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/6",
         "categories": "kids|Toddler|Hat|Polyester",
+        "keywords": "kids|Toddler|Hat|Polyester",
         "category": "kids",
         "color_1": "white"
     },
@@ -82,6 +88,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/275/259/cn17275259.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/7",
         "categories": "mens|Joggers|Slim|Twill",
+        "keywords": "mens|Joggers|Slim|Twill",
         "category": "men",
         "color_1": "green",
         "color_2": "camo"
@@ -95,6 +102,7 @@
         "image_url": "https://www.gap.com/webcontent/0017/403/674/cn17403674.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/men/product/8",
         "categories": "mens|Hoodie",
+        "keywords": "mens|Hoodie",
         "category": "men",
         "color_1": "navy"
     },
@@ -107,6 +115,7 @@
         "image_url": "https://www.gap.com/webcontent/0018/216/653/cn18216653.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/9",
         "categories": "womens|Skinny|Jeans",
+        "keywords": "womens|Skinny|Jeans",
         "category": "women",
         "color_1": "indigo"
     },
@@ -119,6 +128,7 @@
         "image_url": "https://www.gap.com/webcontent/0018/142/973/cn18142973.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/women/product/10",
         "categories": "womens|Denim|Shorts|Jeans",
+        "keywords": "womens|Denim|Shorts|Jeans",
         "category": "women",
         "color_1": "bleached"
     },
@@ -131,6 +141,7 @@
         "image_url": "https://www.gap.com/webcontent/0018/245/202/cn18245202.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/11",
         "categories": "kids|Shorts|Pull-On",
+        "keywords": "kids|Shorts|Pull-On",
         "category": "kids",
         "color_1": "green",
         "color_2": "camo"
@@ -144,8 +155,8 @@
         "image_url": "https://www.gap.com/webcontent/0016/261/164/cn16261164.jpg",
         "url": "https://davidtenenbaum87.github.io/demo-website/category/kids/product/12",
         "categories": "kids|Skinny|Stretch|Jeans",
+        "keywords": "kids|Skinny|Stretch|Jeans",
         "category": "kids",
         "color_1": "indigo"
-    }
-    
+    }  
 ]
