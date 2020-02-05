@@ -18,8 +18,8 @@ class Product extends Component {
 
         }
         if (window.DYO !== null) {
-            window.DYO.smartObject("Training - Recommendation Widget (Product Page - Similarity)", {
-                target: "dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)",
+            window.DYO.smartObject("Training - Recommendation Widget (Product Page - Similarity - Swiper slider - Embed Code)", {
+                target: "dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity_-_Swiper_slider_-_Embed_Code)",
                 inline: true
             });
         }
@@ -55,7 +55,7 @@ class Product extends Component {
                     }
                 </div>
                 {/* <div className="dy-div"></div> */}
-                <div id="dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity)"></div>
+                <div id="dy_Training_-_Recommendation_Widget_(Product_Page_-_Similarity_-_Swiper_slider_-_Embed_Code)"></div>
             </Fragment>
         )
     }

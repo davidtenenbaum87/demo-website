@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className }) => {
+const ProductCard = ({ productData, handleAddToCart, handleRemoveFromCart, className }) => {
     return (
         <div className={className}>
             <Link to={{pathname:`/category/${productData.category}/product/${productData.sku}`, productData, handleAddToCart, handleRemoveFromCart, className}}>
@@ -27,4 +27,4 @@ const Product = ({ productData, handleAddToCart, handleRemoveFromCart, className
     )
 }
 
-export default Product;
+export default ProductCard;
