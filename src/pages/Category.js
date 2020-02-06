@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ProductCard from '../components/ProductCard';
 
-// const Category = ({ category, products, handleAddToCart }) => {
 class Category extends Component {
     componentDidMount() {
         if (window.DY !== null) {
@@ -22,7 +21,7 @@ class Category extends Component {
     }
 
     renderProducts = () => this.props.products.filter(p => p.category === this.props.category).map((product) => {
-        return <ProductCard key={product.sku} productData={product} handleAddToCart={this.props.handleAddToCart} className="product-item"/>;
+        return <ProductCard key={product.sku} productData={product} handleAddToCart={this.props.handleAddToCart} handleRemoveFromCart={null} className="product-item category-page"/>;
     })
 
     render() {

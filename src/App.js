@@ -19,8 +19,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({products: data});
-    window.cartValue = this.state.total || 0;
+    this.setState({products: data, cart: JSON.parse(localStorage.getItem("cart")) || []}, () => {
+      this.calculateCartTotal();
+      window.numberOfCartItems = this.state.cart.length;
+    });
   }
 
   calculateCartTotal = () => {
@@ -38,7 +40,12 @@ class App extends Component {
     if (this.state.products.length !== 0) {
       this.state.products.forEach((product) => {
         if (product.sku === sku) {
-          this.setState({ cart: [...this.state.cart, product] }, () => { this.calculateCartTotal(); this.props.history.goBack() });
+          this.setState({ cart: [...this.state.cart, product] }, () => { 
+            this.calculateCartTotal(); 
+            this.props.history.goBack(); 
+            localStorage.setItem("cart", JSON.stringify(this.state.cart)); 
+            window.numberOfCartItems = this.state.cart.length;
+          });
         }
       })
     }
@@ -60,10 +67,15 @@ class App extends Component {
 
   handleRemoveFromCart = (e, sku) => {
     let cart = [...this.state.cart].filter(cartItem => cartItem.sku !== sku);
-    this.setState({ cart }, () => this.calculateCartTotal());
+    this.setState({ cart }, () => { 
+      this.calculateCartTotal(); 
+      localStorage.setItem("cart", JSON.stringify(this.state.cart));
+      window.numberOfCartItems = this.state.cart.length;
+    });
   }
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
           <Navbar />

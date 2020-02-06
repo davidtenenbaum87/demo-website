@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import ProductCard from '../components/ProductCard';
 
 class Cart extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        };
-    }
-
     componentDidMount() {
         if (window.DY !== null) {
             window.DY.API('spa_start', {
@@ -28,13 +21,13 @@ class Cart extends Component {
     }
 
     renderCartItems = () => this.props.cartItems.map(item => {
-        return <ProductCard key={item.sku} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="cart-item"/>
+        return <ProductCard key={item.sku} productData={item} handleAddToCart={null} handleRemoveFromCart={this.props.handleRemoveFromCart} className="product-item cart-page"/>
     });
 
     render() {
         return (
             <div className="cart">
-                <div className="cart-list">
+                <div className="cart-items">
                     {this.props.cartItems.length !== 0 ? this.renderCartItems() : null}
                 </div>
                 <div className="cart-total">
