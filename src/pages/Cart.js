@@ -3,6 +3,7 @@ import ProductCard from '../components/ProductCard';
 
 class Cart extends Component {
     componentDidMount() {
+        console.log('test');
         if (window.DY !== null) {
             window.DY.API('spa_start', {
                 context: {
