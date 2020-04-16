@@ -26,8 +26,8 @@ class Product extends Component {
         if (window.DY !== null) {
             window.DY.API('spa_start', {
                 context: {
-                    type: 'PRODUCT',
-                    data: [this.state.productData.sku],
+                type: 'PRODUCT',
+                data: [this.state.productData.sku],
                 },
                 countAsPageview: true
             });
